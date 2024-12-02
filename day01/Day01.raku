@@ -1,5 +1,4 @@
-sub uncurry(&f) { -> ($a, $b) {f($a, $b)} }
-my &absdiff = &abs o uncurry(&infix:<->);
+sub absdiff(($a, $b)) { abs($a - $b) }
 
 my @input = $*IN.lines.map(*.split(/\s+/).map(*.Int));
 my @lists = [Z] @input;
