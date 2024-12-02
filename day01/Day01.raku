@@ -1,6 +1,6 @@
 sub absdiff(($a, $b)) { abs($a - $b) }
 
-my @input = $*IN.lines.map(*.split(/\s+/).map(*.Int));
+my @input = $*IN.lines.map: { $_.split(/\s+/).map(*.Int) };
 my @lists = [Z] @input;
 my @pairs = [Z] @lists.map(*.sort);
 my $part1 = [+] @pairs.map(&absdiff);
