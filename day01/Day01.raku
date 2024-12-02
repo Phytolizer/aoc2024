@@ -6,7 +6,7 @@ my @lists = [Z] @input;
 my @pairs = [Z] @lists.map(*.sort);
 my $part1 = [+] @pairs.map(&absdiff);
 my $weights = @lists[1].Bag;
-my $part2 = [+] @pairs.map: -> ($a, $b) {
+my $part2 = [+] @lists[0].map: -> $a {
     $a * $weights{$a}
 }
 say "Part 1: $part1";
