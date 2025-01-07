@@ -55,3 +55,9 @@ racket Day08.rkt < input.txt
 cd day09
 zig build run < input.txt
 ```
+
+## Day 10: Nim
+```
+cd day10
+nim r Day10.nim < input.txt
+```
