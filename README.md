@@ -61,3 +61,10 @@ zig build run < input.txt
 cd day10
 nim r Day10.nim < input.txt
 ```
+
+## Day 11: Factor
+Factor version: `Factor 0.101 x86.64 (2287, heads/master-f4b0c147f7, Jan  8 2025 12:34:35)`
+```
+cd day11
+factor Day11.factor < input.txt
+```
