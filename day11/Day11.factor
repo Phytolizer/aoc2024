@@ -2,20 +2,6 @@ USING: assocs combinators combinators.extras formatting
     generalizations io kernel math math.parser sequences splitting ;
 IN: Day11
 
-! utilities
-
-:: get-or-set-at ( quot: ( ..a key -- ..a value ) key assoc -- value )
-    key assoc at*
-    [| _ |
-        key quot call :> value
-        value key assoc set-at
-        value
-    ]
-    unless
-    ; inline
-
-! main funcs
-
 MEMO:: stones-n ( n blinks -- m )
     n >dec :> name
     {
