@@ -1,5 +1,5 @@
-USING: assocs combinators combinators.extras formatting
-    generalizations io kernel math math.parser sequences splitting ;
+USING: combinators formatting io kernel math math.parser
+    sequences splitting ;
 IN: Day11
 
 MEMO:: stones-n ( n blinks -- m )
